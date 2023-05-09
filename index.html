@@ -14,7 +14,7 @@
     <h1>To do List</h1>
     <div id="root">
         <div class="form-floating mb-3">
-            <input v-model="toTrim" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input   @keyup.enter="addTodo()" v-model="toTrim" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">inserisci nuova item lista</label>
             <div v-if="inputError == true" class="error">Inserire minimo 5 lettere per ogni item</div>
         </div>
