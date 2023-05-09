@@ -21,15 +21,18 @@ const app = Vue.createApp({
 
         ],
 
-        newTodo: {
+       /* newTodo: {
             text: '',
             done: false,
-        },
+        }, */
 
         inputError: false,
 
         cleanedTodo: '',
 
+        i: 0,
+        li: [],
+        toTrim: '',
 
     };
     },
@@ -43,7 +46,7 @@ const app = Vue.createApp({
         },
 
         addTodo() {
-            /*this.cleanedTodo = this.newTodo.trim();
+           /* this.cleanedTodo = this.newTodo.trim();
             if (this.cleanedTodo.length <= 5) {
                 this.todos.unshift(this.cleanedTodo);
                 this.newTodo = '';
@@ -51,16 +54,29 @@ const app = Vue.createApp({
             }else{
                 this.inputError = true
             } */
-            this.todos.unshift(this.newTodo)
+            let toPush = this.toTrim.trim()
+            let newTodo = {
+                text: toPush,
+                done: false,
+            }
+
+            this.todos.unshift({
+                ...newTodo
+            })
+
+
+
+           /* this.todos.unshift({
+                ...this.newTodo
+            }) */
         },
 
+        deleteLi(i){
+            this.todos.splice(i, 1)
+        }
 
 
 	}
-
-
-        
-
 });
 
 app.mount('#root')

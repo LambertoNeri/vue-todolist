@@ -39,6 +39,14 @@ ul {
     max-width: 500px;
 }
 
+li{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
 .no-todo{
     margin-top: 5rem;
     width: 300px;
@@ -54,9 +62,10 @@ ul {
 }
 
 .cancel{
-    margin-left: 300%;
     padding-inline: 0.2rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-}
+} 
+
+
 
