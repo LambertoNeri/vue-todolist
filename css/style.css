@@ -54,7 +54,8 @@ li{
     background-image: url(../img/pxArt\ Fra.png);
     background-size: contain;
     background-repeat: no-repeat;
-    color: white;
+    color: black;
+    position: relative
 }
 
 .lined{
@@ -67,5 +68,50 @@ li{
     padding-bottom: 0.1rem;
 } 
 
+.error{
+    color: red;
+    text-align: center;
+    margin-top: 0.5rem;
+}
 
+.fra-text{
+    position: absolute;
+    right: -121px;
+    top: -43px;
+}
 
+.fra{
+    position: absolute;
+    z-index: 100;
+    right: -109px;
+    top: -18px;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.peppe-pic{
+
+   width: 250px;
+   height: auto;
+   position: absolute;
+   transform: rotate(-31deg);
+    left: -308px;
+    bottom: 124px;
+}
+
+.peppe-text{
+    position: absolute;
+    left: -172px;
+    top: -43px;
+    transform: rotate(-14deg);
+}
+
+.peppe{
+    position: absolute;
+    z-index: 100;
+    left: -149px;
+    top: -4px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    transform: rotate(-31deg);
+}

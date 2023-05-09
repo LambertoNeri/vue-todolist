@@ -16,6 +16,7 @@
         <div class="form-floating mb-3">
             <input v-model="toTrim" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">inserisci nuova item lista</label>
+            <div v-if="inputError == true" class="error">Inserire minimo 5 lettere per ogni item</div>
         </div>
         <button @click="addTodo()" class="send">invia</button>
         <div class="item_list">
@@ -27,14 +28,19 @@
                 </li>
             </ul>
             <div class="no-todo" v-else>
-                <h2>Non ci sono task!!!</h2>
+                <span class="fra">Non ci sono task!!! <br> e poi, cosa sono i Pincoli?!</span>
+                <a class="fra-text" href="http://clipart-library.com/clipart/rTLxGbBMc.htm"><img src="http://clipart-library.com/images/rTLxGbBMc.png" width="192" height="120" /></a>
+                <img class="peppe-pic" src="img/pxArt Peppe.png" alt="">
+                <a class="peppe-text" href="http://clipart-library.com/clipart/rTLxGbBMc.htm"><img src="http://clipart-library.com/images/rTLxGbBMc.png" width="170" height="110" /></a>
+                <span class="peppe">Me lo chiedo pure io!!!</span>
+                
             </div>
 
 
      
         </div>
 
-
+     
 
     </div>
 
