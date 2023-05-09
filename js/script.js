@@ -21,11 +21,6 @@ const app = Vue.createApp({
 
         ],
 
-       /* newTodo: {
-            text: '',
-            done: false,
-        }, */
-
         inputError: false,
 
         cleanedTodo: '',
@@ -46,14 +41,6 @@ const app = Vue.createApp({
         },
 
         addTodo() {
-           /* this.cleanedTodo = this.newTodo.trim();
-            if (this.cleanedTodo.length <= 5) {
-                this.todos.unshift(this.cleanedTodo);
-                this.newTodo = '';
-                this.inputError = false;
-            }else{
-                this.inputError = true
-            } */
             let toPush = this.toTrim.trim()
             let newTodo = {
                 text: toPush,
@@ -63,12 +50,6 @@ const app = Vue.createApp({
             this.todos.unshift({
                 ...newTodo
             })
-
-
-
-           /* this.todos.unshift({
-                ...this.newTodo
-            }) */
         },
 
         deleteLi(i){
