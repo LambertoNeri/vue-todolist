@@ -4,7 +4,7 @@ const app = Vue.createApp({
         todos: [
             {
                 text: 'comprare pincolo',
-                done: true,
+                done: false,
             },
             {
                 text: 'comprare limoni',
@@ -23,6 +23,16 @@ const app = Vue.createApp({
     };
     },
     methods: {
+        toggle(i){
+            if (i.done == false) {
+                i.done = true
+            } else {
+                i.done = false
+            }
+        },
+
+
+
 	}
 
 

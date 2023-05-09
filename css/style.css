@@ -49,3 +49,7 @@ ul {
     color: white;
 }
 
+.lined{
+    text-decoration: line-through;
+}
+

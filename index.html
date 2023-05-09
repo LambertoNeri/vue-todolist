@@ -20,8 +20,9 @@
         <button class="send">invia</button>
         <div class="item_list">
             <ul v-if="todos.length !=0">
-                <li v-for="(todo, index) in todos" :key="index">
-                    {{todo.text}}
+                <li @click="toggle(todo)" v-for="(todo, i) in todos" :key="i">
+                    <span v-if="todo.done == false">{{todo.text}}</span>
+                    <span v-else class="lined">{{todo.text}}</span>
                 </li>
             </ul>
             <div class="no-todo" v-else>
