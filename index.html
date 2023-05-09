@@ -23,6 +23,7 @@
                 <li @click="toggle(todo)" v-for="(todo, i) in todos" :key="i">
                     <span v-if="todo.done == false">{{todo.text}}</span>
                     <span v-else class="lined">{{todo.text}}</span>
+                    <button class="cancel">x</button>
                 </li>
             </ul>
             <div class="no-todo" v-else>

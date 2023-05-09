@@ -53,3 +53,10 @@ ul {
     text-decoration: line-through;
 }
 
+.cancel{
+    margin-left: 300%;
+    padding-inline: 0.2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
